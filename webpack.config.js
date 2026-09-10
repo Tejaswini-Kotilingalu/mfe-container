@@ -39,8 +39,8 @@ module.exports = {
       name: "container",
 
       remotes: {
-        products: "products@https://your-products.vercel.app/remoteEntry.js",
-        cart: "cart@https://your-cart.vercel.app/remoteEntry.js",
+        products: "products@https://Tejaswini-Kotilingalu-products.vercel.app/remoteEntry.js",
+        cart: "cart@https://Tejaswini-Kotilingalu-cart.vercel.app/remoteEntry.js",
       },
 
       shared: {
