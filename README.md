@@ -8,8 +8,9 @@ This project demonstrates a scalable Micro Frontend architecture using React and
 
 ## 🧩 Architecture
 - Container App (Host) - mfe-container-delta.vercel.app
-- Products App (Remote) - 
+- Products App (Remote)
 - Cart App (Remote)
+
 Uses Webpack Module Federation to dynamically load remote modules at runtime.
 
 ## 🛠 Tech Stack
