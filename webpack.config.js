@@ -39,8 +39,8 @@ module.exports = {
       name: "container",
 
       remotes: {
-        products: "products@http://localhost:3001/remoteEntry.js", // ✅ must match
-        cart: "cart@http://localhost:3002/remoteEntry.js",
+        products: "products@https://your-products.vercel.app/remoteEntry.js",
+        cart: "cart@https://your-cart.vercel.app/remoteEntry.js",
       },
 
       shared: {
