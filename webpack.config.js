@@ -30,7 +30,7 @@ module.exports = {
       name: "container",
       remotes: {
         products: "products@https://mfe-products-blue.vercel.app/remoteEntry.js",
-        cart: "cart@https://mfe-cart-blue.vercel.app/remoteEntry.js",
+        cart: "cart@https://mfe-cart-phi.vercel.app/remoteEntry.js",
       },
       shared: {
         react: { singleton: true, requiredVersion: false },
