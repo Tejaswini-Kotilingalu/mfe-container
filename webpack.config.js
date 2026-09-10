@@ -3,22 +3,13 @@ const { ModuleFederationPlugin } = require("webpack").container;
 const path = require("path");
 
 module.exports = {
-  mode: "development",
+  mode: "production", // ✅
+
   entry: "./src/index.js",
 
   output: {
     publicPath: "auto",
-  },
-
-  devServer: {
-    port: 3000,
-    static: {
-      directory: path.join(__dirname, "public"),
-    },
-    headers: {
-      "Access-Control-Allow-Origin": "*", // ✅ IMPORTANT
-    },
-    historyApiFallback: true,
+    clean: true,
   },
 
   module: {
@@ -37,12 +28,10 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       name: "container",
-
       remotes: {
-        products: "products@https://mfe-products-lp6bvhb7h-tejaswini-kotilingalu.vercel.app/remoteEntry.js",
-        cart: "cart@https://mfe-cart-grzyh67gh-tejaswini-kotilingalu.vercel.app/remoteEntry.js"
+        products: "products@https://mfe-products-blue.vercel.app/remoteEntry.js",
+        cart: "cart@https://mfe-cart-blue.vercel.app/remoteEntry.js",
       },
-
       shared: {
         react: { singleton: true, requiredVersion: false },
         "react-dom": { singleton: true, requiredVersion: false },
