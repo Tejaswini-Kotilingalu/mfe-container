@@ -1,3 +1,25 @@
+# Micro Frontend E-Commerce Application (React + Module Federation)
+
+## 🔗 Live Demo
+https://mfe-container-delta.vercel.app
+
+## 🚀 Overview
+This project demonstrates a scalable Micro Frontend architecture using React and Webpack Module Federation.
+
+## 🧩 Architecture
+- Container App (Host) - mfe-container-delta.vercel.app
+- Products App (Remote) - 
+- Cart App (Remote)
+Uses Webpack Module Federation to dynamically load remote modules at runtime.
+
+## 🛠 Tech Stack
+- React
+- Webpack 5
+- Module Federation
+
+## 📸 Screenshots
+<img width="1893" height="807" alt="Screenshot 2026-09-10 181348" src="https://github.com/user-attachments/assets/89e3dd51-489f-4d29-b776-4ed43a4b5915" />
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
